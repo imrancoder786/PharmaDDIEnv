@@ -1,0 +1,32 @@
+name: pharma-interaction-gym
+version: "1.0.0"
+type: space
+runtime: fastapi
+app: server.main:app
+port: 7860
+description: >
+  A real-world RL environment for clinical pharmacists to detect dangerous drug interactions, 
+  explain mechanisms, and recommend safe alternatives.
+tags:
+  - openenv
+  - medicine
+  - safety
+
+tasks:
+  - id: drug_interaction_easy
+    level: easy
+    description: "Detect a single major interaction between two drugs."
+    max_steps: 15
+  - id: drug_interaction_medium
+    level: medium
+    description: "Screen a polypharmacy regimen for multiple interactions."
+    max_steps: 15
+  - id: drug_interaction_hard
+    level: hard
+    description: "Recommend the safest alternative for an impaired patient."
+    max_steps: 20
+
+infrastructure:
+  vcpu: 2
+  memory_gb: 8
+  port: 7860

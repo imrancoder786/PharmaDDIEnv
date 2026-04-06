@@ -1,0 +1,1619 @@
+{
+  "Aspirin": {
+    "class": "NSAID / Antiplatelet",
+    "mechanism_of_action": "Irreversible COX-1 and COX-2 inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Pain",
+      "Fever",
+      "MI Prophylaxis"
+    ]
+  },
+  "Buspirone": {
+    "class": "Anxiolytic",
+    "mechanism_of_action": "5-HT1A partial agonist",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Anxiety"
+    ]
+  },
+  "NSAIDs": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Fluconazole": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Inhibits ergosterol synthesis",
+    "metabolism": [
+      "CYP2C9",
+      "CYP3A4",
+      "CYP2C19"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Candidiasis"
+    ]
+  },
+  "Itraonazole": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Fentanyl": {
+    "class": "Opioid",
+    "mechanism_of_action": "Mu-agonist",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Severe pain"
+    ]
+  },
+  "Posaconazole": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Antifungal",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Rivaroxaban": {
+    "class": "Factor Xa Inhibitor",
+    "mechanism_of_action": "Selective inhibition of Factor Xa",
+    "metabolism": [
+      "CYP3A4",
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "DVT",
+      "AFib"
+    ]
+  },
+  "Sotalol": {
+    "class": "Antiarrhythmic",
+    "mechanism_of_action": "Beta-blocker and Class III antiarrhythmic",
+    "metabolism": [],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Arrhythmias"
+    ]
+  },
+  "Ciprofloxacin": {
+    "class": "Fluoroquinolone Antibiotic",
+    "mechanism_of_action": "Inhibits DNA gyrase",
+    "metabolism": [
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Bacterial infections"
+    ]
+  },
+  "Voriconazole": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Antifungal",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2C19",
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Allopurinol": {
+    "class": "Xanthine Oxidase Inhibitor",
+    "mechanism_of_action": "Reduces uric acid production",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Gout"
+    ]
+  },
+  "Alprazolam": {
+    "class": "Benzodiazepine",
+    "mechanism_of_action": "GABA-A receptor potentiator",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Anxiety",
+      "Panic Disorder"
+    ]
+  },
+  "Venlafaxine": {
+    "class": "SNRI",
+    "mechanism_of_action": "SNRI",
+    "metabolism": [
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression",
+      "Anxiety"
+    ]
+  },
+  "Tacrolimus": {
+    "class": "Immunosuppressant",
+    "mechanism_of_action": "Calcaneurin inhibitor",
+    "metabolism": [
+      "CYP3A4",
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Organ Transplant"
+    ]
+  },
+  "Fluoxetine": {
+    "class": "SSRI",
+    "mechanism_of_action": "Selective serotonin reuptake inhibitor",
+    "metabolism": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression",
+      "Anxiety"
+    ]
+  },
+  "Lamotrigine": {
+    "class": "Anticonvulsant",
+    "mechanism_of_action": "Inhibits voltage-gated sodium channels",
+    "metabolism": [
+      "Glucuronidation"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Seizures",
+      "Bipolar Disorder"
+    ]
+  },
+  "Doxazosin": {
+    "class": "Alpha-1 Blocker",
+    "mechanism_of_action": "Selective alpha-1 antagonist",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension",
+      "BPH"
+    ]
+  },
+  "Pseudoephedrine": {
+    "class": "Decongestant",
+    "mechanism_of_action": "Alpha and beta adrenergic agonist",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Nasal congestion"
+    ]
+  },
+  "Sulfamethoxazole": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Folate synthesis inhibitor",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Infections"
+    ]
+  },
+  "Edoxaban": {
+    "class": "Anticoagulant",
+    "mechanism_of_action": "Factor Xa inhibitor",
+    "metabolism": [
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "AFib"
+    ]
+  },
+  "Moxifloxacin": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "DNA gyrase inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Infections"
+    ]
+  },
+  "Fenofibrate": {
+    "class": "Fibrate",
+    "mechanism_of_action": "PPAR-alpha agonist",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Glyburide": {
+    "class": "Sulfonylurea",
+    "mechanism_of_action": "Stimulates insulin release from pancreas",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Type 2 Diabetes"
+    ]
+  },
+  "Atorvastatin": {
+    "class": "HMG-CoA Reductase Inhibitor",
+    "mechanism_of_action": "Inhibits cholesterol synthesis",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Amlodipine": {
+    "class": "Calcium Channel Blocker",
+    "mechanism_of_action": "Dihydropyridine CCB",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension",
+      "Angina"
+    ]
+  },
+  "Sumatriptan": {
+    "class": "Triptan",
+    "mechanism_of_action": "5-HT1B/1D agonist",
+    "metabolism": [
+      "MAO-A"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Migraine"
+    ]
+  },
+  "Trimethoprim": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Inhibits dihydrofolate reductase",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "UTI"
+    ]
+  },
+  "Multivitamins with Zinc": {
+    "class": "Supplement",
+    "mechanism_of_action": "Essential minerals and vitamins",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General health"
+    ]
+  },
+  "Escitalopram": {
+    "class": "SSRI",
+    "mechanism_of_action": "SSRI",
+    "metabolism": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression"
+    ]
+  },
+  "Ferrous Sulfate": {
+    "class": "Iron Supplement",
+    "mechanism_of_action": "Iron replacement",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Iron deficiency anemia"
+    ]
+  },
+  "Enalapril": {
+    "class": "ACE Inhibitor",
+    "mechanism_of_action": "Inhibits ACE",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Gentamicin": {
+    "class": "Aminoglycoside Antibiotic",
+    "mechanism_of_action": "Inhibits 30S ribosomal subunit",
+    "metabolism": [],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Severe infections"
+    ]
+  },
+  "Nitroglycerin": {
+    "class": "Nitrate Vasodilator",
+    "mechanism_of_action": "Releases nitric oxide",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Angina"
+    ]
+  },
+  "Apixaban": {
+    "class": "Factor Xa Inhibitor",
+    "mechanism_of_action": "Selective inhibition of Factor Xa",
+    "metabolism": [
+      "CYP3A4",
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "DVT",
+      "AFib"
+    ]
+  },
+  "Garlic": {
+    "class": "Herbal Supplement",
+    "mechanism_of_action": "Antiplatelet effects",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Clotrimazole": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Inhibits ergosterol",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Lurasidone": {
+    "class": "Antipsychotic",
+    "mechanism_of_action": "Atypical antipsychotic",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Schizophrenia"
+    ]
+  },
+  "Zolmitriptan": {
+    "class": "Triptan",
+    "mechanism_of_action": "5-HT1B/1D agonist",
+    "metabolism": [
+      "MAO-A",
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Migraine"
+    ]
+  },
+  "Carvedilol": {
+    "class": "Beta-Blocker",
+    "mechanism_of_action": "Non-selective beta and alpha-1 blocker",
+    "metabolism": [
+      "CYP2D6",
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Heart Failure"
+    ]
+  },
+  "Clarithromycin": {
+    "class": "Macrolide Antibiotic",
+    "mechanism_of_action": "Inhibits 50S ribosomal subunit",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Bacterial infections"
+    ]
+  },
+  "Linezolid": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Inhibits protein synthesis (23S)",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "MRSA",
+      "VRE"
+    ]
+  },
+  "Carbamazepine": {
+    "class": "Anticonvulsant",
+    "mechanism_of_action": "Sodium channel blocker",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Seizures",
+      "Trigeminal Neuralgia"
+    ]
+  },
+  "Cephalexin": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Cell wall inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Infections"
+    ]
+  },
+  "Cranberry Juice": {
+    "class": "Food",
+    "mechanism_of_action": "Antioxidant",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Health"
+    ]
+  },
+  "Metoprolol": {
+    "class": "Beta-Blocker",
+    "mechanism_of_action": "Selective beta-1 blocker",
+    "metabolism": [
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension",
+      "Angina",
+      "Heart Failure"
+    ]
+  },
+  "Ketoconazole": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Inhibits ergosterol synthesis",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Ondansetron": {
+    "class": "Antiemetic",
+    "mechanism_of_action": "5-HT3 receptor antagonist",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6",
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Nausea"
+    ]
+  },
+  "Vardenafil": {
+    "class": "PDE5 Inhibitor",
+    "mechanism_of_action": "Vasodilator",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Erectile Dysfunction"
+    ]
+  },
+  "Terbinafine": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Squalene epoxidase inhibitor",
+    "metabolism": [
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Vandetanib": {
+    "class": "Antineoplastic",
+    "mechanism_of_action": "Tyrosine kinase inhibitor",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Cancer"
+    ]
+  },
+  "Felodipine": {
+    "class": "CCB",
+    "mechanism_of_action": "Dihydropyridine CCB",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Losartan": {
+    "class": "ARB",
+    "mechanism_of_action": "Angiotensin II receptor blocker",
+    "metabolism": [
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Ranolazine": {
+    "class": "Antianginal",
+    "mechanism_of_action": "Inhibits late sodium current",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Angina"
+    ]
+  },
+  "Nifedipine": {
+    "class": "CCB",
+    "mechanism_of_action": "Dihydropyridine CCB",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Acetazolamide": {
+    "class": "Diuretic",
+    "mechanism_of_action": "Carbonic anhydrase inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Glaucoma"
+    ]
+  },
+  "Citalopram": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Diazepam": {
+    "class": "Benzodiazepine",
+    "mechanism_of_action": "GABA-A potentiator",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2C19"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Anxiety",
+      "Muscle spasms"
+    ]
+  },
+  "Sildenafil": {
+    "class": "PDE5 Inhibitor",
+    "mechanism_of_action": "Increases cGMP by inhibiting PDE5",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Erectile Dysfunction",
+      "Pulmonary Hypertension"
+    ]
+  },
+  "Metformin": {
+    "class": "Biguanide",
+    "mechanism_of_action": "Reduces hepatic glucose production",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Type 2 Diabetes"
+    ]
+  },
+  "Methadone": {
+    "class": "Opioid / Addiction Tx",
+    "mechanism_of_action": "Mu-opioid agonist and NMDA antagonist",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2B6",
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Pain",
+      "Opioid Use Disorder"
+    ]
+  },
+  "Warfarin": {
+    "class": "Anticoagulant",
+    "mechanism_of_action": "Vitamin K antagonist",
+    "metabolism": [
+      "CYP2C9",
+      "CYP3A4",
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "DVT",
+      "PE",
+      "Atrial Fibrillation"
+    ]
+  },
+  "St. John's Wort": {
+    "class": "Herbal Supplement",
+    "mechanism_of_action": "Serotonergic and CYP inducer",
+    "metabolism": [
+      "CYP3A4",
+      "Inducer"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression"
+    ]
+  },
+  "Valsartan": {
+    "class": "ARB",
+    "mechanism_of_action": "Angiotensin receptor blocker",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Quinidine": {
+    "class": "Antiarrhythmic",
+    "mechanism_of_action": "Class Ia antiarrhythmic",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Arrhythmias"
+    ]
+  },
+  "Omeprazole": {
+    "class": "Proton Pump Inhibitor",
+    "mechanism_of_action": "Inhibits H+/K+ ATPase",
+    "metabolism": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "GERD",
+      "PUD"
+    ]
+  },
+  "Levofloxacin": {
+    "class": "Fluoroquinolone Antibiotic",
+    "mechanism_of_action": "Inhibits DNA gyrase",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Bacterial infections"
+    ]
+  },
+  "Insulin": {
+    "class": "Hormone",
+    "mechanism_of_action": "Promotes glucose uptake",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Diabetes"
+    ]
+  },
+  "Calcium Carbonate": {
+    "class": "Antacid / Supplement",
+    "mechanism_of_action": "Neutralizes gastric acid",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Heartburn",
+      "Calcium deficiency"
+    ]
+  },
+  "Bupropion": {
+    "class": "Antidepressant",
+    "mechanism_of_action": "NDRI",
+    "metabolism": [
+      "CYP2B6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Depression"
+    ]
+  },
+  "Hydrochlorothiazide": {
+    "class": "Thiazide Diuretic",
+    "mechanism_of_action": "Inhibits sodium reabsorption in distal tubules",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension",
+      "Edema"
+    ]
+  },
+  "Paroxetine": {
+    "class": "SSRI",
+    "mechanism_of_action": "Selective serotonin reuptake inhibitor",
+    "metabolism": [
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression",
+      "Anxiety"
+    ]
+  },
+  "Erythromycin": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Azole Antifungals": {
+    "class": "Antifungal",
+    "mechanism_of_action": "Class of drugs",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Fungal infections"
+    ]
+  },
+  "Diltiazem": {
+    "class": "Calcium Channel Blocker",
+    "mechanism_of_action": "Non-dihydropyridine CCB",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension",
+      "Angina",
+      "AFib"
+    ]
+  },
+  "Potassium": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Lisinopril": {
+    "class": "ACE Inhibitor",
+    "mechanism_of_action": "Inhibits angiotensin-converting enzyme",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension",
+      "Heart Failure"
+    ]
+  },
+  "Cyclosporine": {
+    "class": "Immunosuppressant",
+    "mechanism_of_action": "Calcaneurin inhibitor",
+    "metabolism": [
+      "CYP3A4",
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Organ Transplant",
+      "Psoriasis"
+    ]
+  },
+  "Cimetidine": {
+    "class": "H2 Antagonist",
+    "mechanism_of_action": "Inhibits gastric acid secretion",
+    "metabolism": [
+      "CYP1A2",
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "GERD",
+      "Peptic Ulcer"
+    ]
+  },
+  "Celecoxib": {
+    "class": "NSAID",
+    "mechanism_of_action": "Selective COX-2 inhibitor",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Pain"
+    ]
+  },
+  "Isosorbide Mononitrate": {
+    "class": "Nitrate",
+    "mechanism_of_action": "Vasodilator",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Angina"
+    ]
+  },
+  "Tetracycline": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Protein synthesis inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Infections"
+    ]
+  },
+  "Phenytoin": {
+    "class": "Anticonvulsant",
+    "mechanism_of_action": "Sodium channel blocker",
+    "metabolism": [
+      "CYP2C9",
+      "CYP2C19"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Seizures"
+    ]
+  },
+  "Naproxen": {
+    "class": "NSAID",
+    "mechanism_of_action": "COX inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Pain"
+    ]
+  },
+  "Prednisone": {
+    "class": "Corticosteroid",
+    "mechanism_of_action": "Glucocorticoid receptor agonist",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Inflammation",
+      "Autoimmune disorders"
+    ]
+  },
+  "Tramadol": {
+    "class": "Opioid Analgesic",
+    "mechanism_of_action": "Mu-opioid agonist and SNRI",
+    "metabolism": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Moderate to severe pain"
+    ]
+  },
+  "Amoxicillin": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Cell wall inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Infections"
+    ]
+  },
+  "Soy Milk": {
+    "class": "Food",
+    "mechanism_of_action": "Protein source",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Diet"
+    ]
+  },
+  "Oral Contraceptives": {
+    "class": "Hormonal Contraceptive",
+    "mechanism_of_action": "Estrogen and Progestin",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Contraception"
+    ]
+  },
+  "MAO Inhibitor (Phenelzine)": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Valproic Acid": {
+    "class": "Anticonvulsant / Mood Stabilizer",
+    "mechanism_of_action": "Increases GABA levels",
+    "metabolism": [
+      "CYP2C9",
+      "Glucuronidation"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Seizures",
+      "Bipolar Disorder"
+    ]
+  },
+  "Oxycodone": {
+    "class": "Opioid Analgesic",
+    "mechanism_of_action": "Mu-opioid agonist",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Moderate to severe pain"
+    ]
+  },
+  "Spironolactone": {
+    "class": "Aldosterone Antagonist",
+    "mechanism_of_action": "Competes with aldosterone in distal tubules",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Heart Failure",
+      "Hypertension",
+      "Edema"
+    ]
+  },
+  "Coenzyme Q10": {
+    "class": "Supplement",
+    "mechanism_of_action": "Antioxidant",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Health"
+    ]
+  },
+  "Amiodarone": {
+    "class": "Antiarrhythmic",
+    "mechanism_of_action": "Class III antiarrhythmic (multi-channel blocker)",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2C8"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": false,
+    "common_indications": [
+      "Ventricular arrhythmias",
+      "Atrial Fibrillation"
+    ]
+  },
+  "Contrast Dye (Iodinated)": {
+    "class": "Diagnostic Agent",
+    "mechanism_of_action": "Radiopacity for imaging",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Radiological imaging"
+    ]
+  },
+  "Rifampin": {
+    "class": "Antibiotic",
+    "mechanism_of_action": "Inhibits RNA polymerase",
+    "metabolism": [
+      "CYP3A4",
+      "Inducer"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Tuberculosis"
+    ]
+  },
+  "Ibuprofen": {
+    "class": "NSAID",
+    "mechanism_of_action": "COX-1 and COX-2 inhibitor",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Pain",
+      "Inflammation"
+    ]
+  },
+  "Green Tea": {
+    "class": "Supplement",
+    "mechanism_of_action": "Antioxidant",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Health"
+    ]
+  },
+  "Grapefruit Juice": {
+    "class": "Food",
+    "mechanism_of_action": "Inhibits intestinal CYP3A4",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Diet"
+    ]
+  },
+  "Diclofenac": {
+    "class": "NSAID",
+    "mechanism_of_action": "COX inhibitor",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Pain"
+    ]
+  },
+  "Tadalafil": {
+    "class": "PDE5 Inhibitor",
+    "mechanism_of_action": "Vasodilator",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Erectile Dysfunction"
+    ]
+  },
+  "Colchicine": {
+    "class": "Antigout Agent",
+    "mechanism_of_action": "Inhibits microtubule polymerization",
+    "metabolism": [
+      "CYP3A4",
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Gout"
+    ]
+  },
+  "Sodium Chloride (Low intake)": {
+    "class": "Electrolyte",
+    "mechanism_of_action": "Dietary salt restriction",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Diet"
+    ]
+  },
+  "Codeine": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Propranolol": {
+    "class": "Beta-Blocker",
+    "mechanism_of_action": "Non-selective beta blocker",
+    "metabolism": [
+      "CYP2D6",
+      "CYP1A2",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hypertension",
+      "Anxiety",
+      "Migraine Prophylaxis"
+    ]
+  },
+  "Haloperidol": {
+    "class": "Antipsychotic",
+    "mechanism_of_action": "D2 antagonist",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Schizophrenia"
+    ]
+  },
+  "Topiramate": {
+    "class": "Anticonvulsant",
+    "mechanism_of_action": "Blocks sodium channels, enhances GABA",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Seizures",
+      "Migraine Prophylaxis"
+    ]
+  },
+  "Nebivolol": {
+    "class": "Beta-Blocker",
+    "mechanism_of_action": "Selective beta-1 blocker with NO activity",
+    "metabolism": [
+      "CYP2D6"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension"
+    ]
+  },
+  "Verapamil": {
+    "class": "Calcium Channel Blocker",
+    "mechanism_of_action": "Non-dihydropyridine CCB",
+    "metabolism": [
+      "CYP3A4",
+      "CYP2D6",
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertension",
+      "Angina",
+      "AFib"
+    ]
+  },
+  "Sertraline": {
+    "class": "SSRI",
+    "mechanism_of_action": "Selective serotonin reuptake inhibitor",
+    "metabolism": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression",
+      "Anxiety",
+      "OCD"
+    ]
+  },
+  "Vitamin K": {
+    "class": "Vitamin",
+    "mechanism_of_action": "Cofactor for clotting factors",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Warfarin reversal",
+      "Vitamin K deficiency"
+    ]
+  },
+  "Quetiapine": {
+    "class": "Antipsychotic",
+    "mechanism_of_action": "D2 and 5HT2 receptor antagonist",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Schizophrenia",
+      "Bipolar Disorder"
+    ]
+  },
+  "Doxycycline": {
+    "class": "Tetracycline Antibiotic",
+    "mechanism_of_action": "Inhibits 30S ribosomal subunit",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Bacterial infections",
+      "Malaria Prophylaxis"
+    ]
+  },
+  "Duloxetine": {
+    "class": "SNRI",
+    "mechanism_of_action": "Serotonin-Norepinephrine Reuptake Inhibitor",
+    "metabolism": [
+      "CYP2D6",
+      "CYP1A2"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Depression",
+      "Pain"
+    ]
+  },
+  "Niacin": {
+    "class": "Vitamin / Lipid Agent",
+    "mechanism_of_action": "Inhibits lipolysis",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Potassium Chloride": {
+    "class": "Electrolyte",
+    "mechanism_of_action": "Potassium replacement",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypokalemia"
+    ]
+  },
+  "Tamoxifen": {
+    "class": "SERM",
+    "mechanism_of_action": "Selective estrogen receptor modulator",
+    "metabolism": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Breast Cancer"
+    ]
+  },
+  "Gemfibrozil": {
+    "class": "Fibrate",
+    "mechanism_of_action": "Activates PPAR-alpha",
+    "metabolism": [
+      "CYP2C8",
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Hypertriglyceridemia"
+    ]
+  },
+  "Lovastatin": {
+    "class": "Unknown",
+    "mechanism_of_action": "Consult pharmacological references",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General"
+    ]
+  },
+  "Ginkgo Biloba": {
+    "class": "Herbal Supplement",
+    "mechanism_of_action": "Antiplatelet effects",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Memory"
+    ]
+  },
+  "Clopidogrel": {
+    "class": "Antiplatelet",
+    "mechanism_of_action": "P2Y12 receptor antagonist",
+    "metabolism": [
+      "CYP2C19"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Post-MI",
+      "Stroke Prophylaxis"
+    ]
+  },
+  "Sodium Chloride (High intake)": {
+    "class": "Electrolyte",
+    "mechanism_of_action": "Dietary salt",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Diet"
+    ]
+  },
+  "Methotrexate": {
+    "class": "Antimetabolite",
+    "mechanism_of_action": "Inhibits dihydrofolate reductase",
+    "metabolism": [],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Cancer",
+      "Rheumatoid Arthritis",
+      "Psoriasis"
+    ]
+  },
+  "Azithromycin": {
+    "class": "Macrolide Antibiotic",
+    "mechanism_of_action": "Inhibits 50S ribosomal subunit",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Bacterial infections"
+    ]
+  },
+  "Ritonavir": {
+    "class": "Antiretroviral",
+    "mechanism_of_action": "Protease inhibitor",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "HIV"
+    ]
+  },
+  "Dolutegravir": {
+    "class": "Antiretroviral",
+    "mechanism_of_action": "Integrase inhibitor",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "HIV"
+    ]
+  },
+  "Lithium": {
+    "class": "Antimanic Agent",
+    "mechanism_of_action": "Alters cation transport and neurotransmitter release",
+    "metabolism": [],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Bipolar Disorder"
+    ]
+  },
+  "Furosemide": {
+    "class": "Loop Diuretic",
+    "mechanism_of_action": "Inhibits Na-K-2Cl cotransporter in Thick Ascending Limb",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Edema",
+      "Heart Failure"
+    ]
+  },
+  "Vitamin E": {
+    "class": "Vitamin",
+    "mechanism_of_action": "Antioxidant",
+    "metabolism": [],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "General health"
+    ]
+  },
+  "Simvastatin": {
+    "class": "HMG-CoA Reductase Inhibitor",
+    "mechanism_of_action": "Inhibits cholesterol synthesis",
+    "metabolism": [
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Metronidazole": {
+    "class": "Nitroimidazole Antibiotic",
+    "mechanism_of_action": "Inhibits DNA synthesis",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "Anaerobic infections",
+      "Protozoal infections"
+    ]
+  },
+  "Theophylline": {
+    "class": "Methylxanthine",
+    "mechanism_of_action": "Phosphodiesterase inhibition and adenosine antagonism",
+    "metabolism": [
+      "CYP1A2",
+      "CYP3A4"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Asthma",
+      "COPD"
+    ]
+  },
+  "Rosuvastatin": {
+    "class": "HMG-CoA Reductase Inhibitor",
+    "mechanism_of_action": "Inhibits cholesterol synthesis",
+    "metabolism": [
+      "CYP2C9"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": false,
+    "common_indications": [
+      "Hyperlipidemia"
+    ]
+  },
+  "Dabigatran": {
+    "class": "Anticoagulant",
+    "mechanism_of_action": "Direct thrombin inhibitor",
+    "metabolism": [
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": false,
+    "renal_clearance": true,
+    "common_indications": [
+      "AFib"
+    ]
+  },
+  "Digoxin": {
+    "class": "Cardiac Glycoside",
+    "mechanism_of_action": "Inhibits Na+/K+ ATPase",
+    "metabolism": [
+      "P-gp"
+    ],
+    "narrow_therapeutic_index": true,
+    "renal_clearance": true,
+    "common_indications": [
+      "Heart Failure",
+      "Atrial Fibrillation"
+    ]
+  }
+}

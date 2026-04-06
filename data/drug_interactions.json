@@ -1,0 +1,3034 @@
+[
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Aspirin",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both drugs inhibit platelet aggregation and coagulation through different pathways \u2014 additive anticoagulant effect significantly increases bleeding risk.",
+    "clinical_effect": "Increased risk of serious bleeding including intracranial hemorrhage",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Acetaminophen for pain relief instead of Aspirin"
+    ],
+    "monitoring": "If combination unavoidable, monitor INR closely and watch for signs of bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Tramadol",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both increase serotonergic activity. Tramadol inhibits serotonin reuptake and Sertraline blocks SERT. Combined serotonin excess causes Serotonin Syndrome.",
+    "clinical_effect": "Serotonin Syndrome: hyperthermia, agitation, tremor, myoclonus, potentially fatal",
+    "recommendation": "contraindicated",
+    "alternatives": [
+      "Codeine",
+      "Oxycodone (with caution)",
+      "Non-opioid analgesics"
+    ],
+    "monitoring": "Do not combine. If patient already on both, monitor for serotonin syndrome symptoms.",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Clarithromycin",
+    "drug_b": "Atorvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Clarithromycin is a potent CYP3A4 inhibitor. Atorvastatin is primarily metabolized by CYP3A4. Inhibition causes Atorvastatin plasma levels to increase 10-fold.",
+    "clinical_effect": "Severe myopathy and rhabdomyolysis (muscle breakdown, kidney failure)",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Azithromycin (does not inhibit CYP3A4)",
+      "Switch to Pravastatin (not CYP3A4 metabolized)"
+    ],
+    "monitoring": "If unavoidable: temporarily discontinue statin during antibiotic course",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Contrast Dye (Iodinated)",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Iodinated contrast can cause acute kidney injury. Metformin is renally cleared. AKI leads to Metformin accumulation causing potentially fatal lactic acidosis.",
+    "clinical_effect": "Lactic acidosis \u2014 potentially fatal metabolic emergency",
+    "recommendation": "hold_before_procedure",
+    "alternatives": [
+      "Hold Metformin 48hrs before contrast procedure, resume only after kidney function confirmed normal"
+    ],
+    "monitoring": "Check creatinine before resuming Metformin",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Ciprofloxacin",
+    "drug_b": "Theophylline",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Ciprofloxacin inhibits CYP1A2 which metabolizes Theophylline. Theophylline plasma levels increase dramatically.",
+    "clinical_effect": "Theophylline toxicity: seizures, cardiac arrhythmias, nausea, vomiting",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Azithromycin",
+      "Amoxicillin (if appropriate)"
+    ],
+    "monitoring": "If combination used: reduce Theophylline dose by 30-50%, monitor serum levels",
+    "cyp_enzyme": "CYP1A2",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Ibuprofen",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "NSAIDs reduce renal prostaglandins causing decreased renal blood flow and reduced Lithium excretion. Lithium accumulates to toxic levels.",
+    "clinical_effect": "Lithium toxicity: tremor, confusion, seizures, cardiac arrhythmias",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Acetaminophen/Paracetamol for pain (does not affect Lithium levels)"
+    ],
+    "monitoring": "Monitor Lithium serum levels closely if NSAID unavoidable",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sildenafil",
+    "drug_b": "Nitroglycerin",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both drugs cause vasodilation through different mechanisms (PDE5 inhibition vs NO release). Combined effect causes profound, potentially fatal hypotension.",
+    "clinical_effect": "Severe hypotension: syncope, myocardial infarction, death",
+    "recommendation": "contraindicated",
+    "alternatives": [
+      "No safe combination. Patient must choose one or the other."
+    ],
+    "monitoring": "Absolute contraindication. If patient uses nitrates for angina, sildenafil is contraindicated.",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluoxetine",
+    "drug_b": "MAO Inhibitor (Phenelzine)",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Fluoxetine inhibits serotonin reuptake. MAOIs block serotonin degradation. Combined: massive serotonin accumulation.",
+    "clinical_effect": "Severe Serotonin Syndrome: hyperthermia >41C, rhabdomyolysis, DIC, death",
+    "recommendation": "contraindicated",
+    "alternatives": [
+      "14-day washout after stopping MAOI before starting Fluoxetine. 5-week washout after stopping Fluoxetine before starting MAOI."
+    ],
+    "monitoring": "Absolute contraindication. Requires washout period.",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Digoxin",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Amiodarone inhibits P-glycoprotein and CYP3A4 which eliminates Digoxin. Digoxin levels increase significantly.",
+    "clinical_effect": "Digoxin toxicity: bradycardia, heart block, ventricular arrhythmias, nausea",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "If combination required, reduce Digoxin dose by 50% and monitor levels closely"
+    ],
+    "monitoring": "Monitor Digoxin serum levels and ECG. Target lower end of therapeutic range.",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methotrexate",
+    "drug_b": "Trimethoprim",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both drugs inhibit dihydrofolate reductase (DHFR) enzyme. Combined folate antagonism causes severe myelosuppression.",
+    "clinical_effect": "Severe bone marrow suppression: pancytopenia, serious infections, bleeding",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Use different antibiotic class (avoid all antifolates with Methotrexate)"
+    ],
+    "monitoring": "If unavoidable: daily folate supplementation, weekly CBC monitoring",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Rifampin is a potent inducer of CYP2C9, which metabolizes Warfarin. This leads to significantly decreased Warfarin levels.",
+    "clinical_effect": "Decreased anticoagulation efficacy, increased risk of thrombosis",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Increase Warfarin dose with close monitoring",
+      "Switch to LMWH"
+    ],
+    "monitoring": "Monitor INR daily when starting or stopping Rifampin",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Fluconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Fluconazole inhibits CYP2C9, decreasing the metabolism of Warfarin.",
+    "clinical_effect": "Increased INR, high risk of bleeding",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Warfarin dose",
+      "Use alternative antifungal like Caspofungin"
+    ],
+    "monitoring": "Monitor INR closely",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Rivaroxaban",
+    "drug_b": "Ketoconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Ketoconazole inhibits CYP3A4 and P-gp, both involved in Rivaroxaban clearance.",
+    "clinical_effect": "Increased Rivaroxaban levels, bleeding risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Apixaban (still has interaction, use with caution)",
+      "Warfarin with monitoring"
+    ],
+    "monitoring": "Monitor for signs of bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Apixaban",
+    "drug_b": "Phenytoin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Phenytoin induces CYP3A4 and P-gp, increasing the clearance of Apixaban.",
+    "clinical_effect": "Reduced Apixaban efficacy, stroke risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Warfarin with INR monitoring"
+    ],
+    "monitoring": "Monitor for thromboembolic events",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "St. John's Wort",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive serotonergic effect.",
+    "clinical_effect": "Serotonin Syndrome",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Counsel patient to avoid herbal supplements"
+    ],
+    "monitoring": "Monitor for serotonin syndrome",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluoxetine",
+    "drug_b": "Tamoxifen",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Fluoxetine is a potent CYP2D6 inhibitor, which is required to convert Tamoxifen to its active metabolite endoxifen.",
+    "clinical_effect": "Reduced Tamoxifen efficacy in breast cancer treatment",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Citalopram (weaker CYP2D6 inhibitor)",
+      "Venlafaxine"
+    ],
+    "monitoring": "Monitor cancer progression markers",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Paroxetine",
+    "drug_b": "Metoprolol",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Paroxetine inhibits CYP2D6, which metabolizes Metoprolol.",
+    "clinical_effect": "Increased Metoprolol levels, bradycardia, hypotension",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Metoprolol dose",
+      "Switch to Sertraline"
+    ],
+    "monitoring": "Monitor heart rate and blood pressure",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Erythromycin",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Erythromycin inhibits CYP3A4, leading to massive Simvastatin accumulation.",
+    "clinical_effect": "Rhabdomyolysis",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Azithromycin",
+      "Pravastatin"
+    ],
+    "monitoring": "Monitor for muscle pain and CK levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Linezolid",
+    "drug_b": "Pseudoephedrine",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Linezolid is a weak MAOI; Pseudoephedrine is a sympathomimetic.",
+    "clinical_effect": "Hypertensive crisis",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Use topical decongestant",
+      "Oxymetazoline"
+    ],
+    "monitoring": "Monitor blood pressure",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Spironolactone",
+    "drug_b": "Lisinopril",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both drugs increase potassium levels.",
+    "clinical_effect": "Hyperkalemia",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Furosemide (if appropriate)"
+    ],
+    "monitoring": "Monitor serum potassium and creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Digoxin",
+    "drug_b": "Verapamil",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Verapamil inhibits P-gp, reducing renal and non-renal clearance of Digoxin.",
+    "clinical_effect": "Digoxin toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Digoxin dose by 50%",
+      "Switch to Diltiazem (still interacts but less)"
+    ],
+    "monitoring": "Monitor Digoxin levels and ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Glyburide",
+    "drug_b": "Gemfibrozil",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Gemfibrozil inhibits CYP2C8/9, increasing Glyburide levels.",
+    "clinical_effect": "Severe hypoglycemia",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Metformin",
+      "Fenofibrate"
+    ],
+    "monitoring": "Monitor blood glucose",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Insulin",
+    "drug_b": "Propranolol",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Beta-blockers can mask symptoms of hypoglycemia (tachycardia) and delay recovery.",
+    "clinical_effect": "Masked hypoglycemia",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Cardioselective beta-blocker (Atenolol)"
+    ],
+    "monitoring": "Monitor blood glucose more frequently",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Cyclosporine",
+    "drug_b": "St. John's Wort",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction of CYP3A4 and P-gp decreases Cyclosporine levels.",
+    "clinical_effect": "Organ transplant rejection",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Stop herbal supplement"
+    ],
+    "monitoring": "Monitor Cyclosporine trough levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tacrolimus",
+    "drug_b": "Grapefruit Juice",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Grapefruit juice inhibits intestinal CYP3A4.",
+    "clinical_effect": "Increased Tacrolimus levels, nephrotoxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Avoid grapefruit juice"
+    ],
+    "monitoring": "Monitor Tacrolimus levels and creatinine",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Oxycodone",
+    "drug_b": "Alprazolam",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive CNS and respiratory depression.",
+    "clinical_effect": "Respiratory depression, coma, death",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Reduce dose of both if necessary",
+      "NSAIDs for pain"
+    ],
+    "monitoring": "Monitor respiratory rate and sedation level",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methadone",
+    "drug_b": "Fluconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Fluconazole inhibits CYP3A4, which metabolizes Methadone.",
+    "clinical_effect": "Methadone toxicity, QTc prolongation",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Methadone dose",
+      "Use alternative antifungal"
+    ],
+    "monitoring": "Monitor QTc on ECG",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "Allopurinol",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Increased risk of hypersensitivity reactions.",
+    "clinical_effect": "Skin rash, Stevens-Johnson syndrome (rare)",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Alternative antihypertensive"
+    ],
+    "monitoring": "Monitor for skin changes",
+    "cyp_enzyme": null,
+    "evidence_level": "moderate"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Amlodipine",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Amlodipine inhibits CYP3A4 moderately.",
+    "clinical_effect": "Increased Simvastatin levels, myopathy risk",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Simvastatin to 20mg daily",
+      "Switch to Rosuvastatin"
+    ],
+    "monitoring": "Monitor for muscle pain",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Cimetidine",
+    "severity": "minor",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Cimetidine competes for renal tubular secretion.",
+    "clinical_effect": "Slightly increased Metformin levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Famotidine"
+    ],
+    "monitoring": "Monitor blood glucose",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Diltiazem",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Diltiazem inhibits CYP3A4.",
+    "clinical_effect": "Increased Atorvastatin levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Pravastatin"
+    ],
+    "monitoring": "Monitor for muscle pain",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Levofloxacin",
+    "drug_b": "Warfarin",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Antibiotics may alter gut flora that produce Vitamin K and may also inhibit CYP enzymes.",
+    "clinical_effect": "Increased INR, bleeding risk",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Monitor INR"
+    ],
+    "monitoring": "INR monitoring",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metronidazole",
+    "drug_b": "Warfarin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibits CYP2C9.",
+    "clinical_effect": "Increased INR, high bleeding risk",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Warfarin dose",
+      "Use different antibiotic"
+    ],
+    "monitoring": "Monitor INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Doxycycline",
+    "drug_b": "Warfarin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Alteration of gut flora.",
+    "clinical_effect": "Increased INR",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR monitoring",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Azithromycin",
+    "drug_b": "Warfarin",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Minimal interaction compared to other macrolides.",
+    "clinical_effect": "Slight INR increase",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR monitoring",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Gemfibrozil",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition of glucuronidation.",
+    "clinical_effect": "Rhabdomyolysis",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Fenofibrate"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Cyclosporine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 and OATP1B1 inhibition.",
+    "clinical_effect": "Severe myopathy",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Pravastatin"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Rosuvastatin",
+    "drug_b": "Cyclosporine",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Inhibition of OATP1B1 transporter.",
+    "clinical_effect": "Increased Rosuvastatin levels",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Rosuvastatin to 5mg"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Warfarin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibits CYP2C9, CYP3A4, and CYP2D6.",
+    "clinical_effect": "Massively increased INR",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Warfarin dose by 30-50%"
+    ],
+    "monitoring": "Monitor INR very closely",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Simvastatin to 20mg"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Diltiazem",
+    "drug_b": "Simvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Simvastatin to 20mg"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Verapamil",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Simvastatin to 20mg"
+    ],
+    "monitoring": "Monitor CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Carbamazepine",
+    "drug_b": "Warfarin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 induction.",
+    "clinical_effect": "Decreased Warfarin levels",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Increase Warfarin dose"
+    ],
+    "monitoring": "Monitor INR",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Warfarin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2C9 induction (complex interaction initially can increase INR).",
+    "clinical_effect": "Variable INR, usually decreased over time",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Valproic Acid",
+    "drug_b": "Warfarin",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Protein binding displacement.",
+    "clinical_effect": "Increased free Warfarin",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Hydrochlorothiazide",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Thiazides reduce renal Lithium clearance.",
+    "clinical_effect": "Lithium toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Lithium dose",
+      "Monitor levels"
+    ],
+    "monitoring": "Monitor Lithium levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Lisinopril",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "ACE inhibitors reduce renal Lithium clearance.",
+    "clinical_effect": "Lithium toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Lithium dose"
+    ],
+    "monitoring": "Monitor Lithium levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tramadol",
+    "drug_b": "Sertraline",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonergic additive effects.",
+    "clinical_effect": "Serotonin Syndrome",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Monitor symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tramadol",
+    "drug_b": "Fluoxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Fluoxetine inhibits CYP2D6 which converts Tramadol to active metabolite.",
+    "clinical_effect": "Reduced analgesia, increased parent drug (serotonin syndrome risk)",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Monitor symptoms",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Codeine",
+    "drug_b": "Fluoxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Fluoxetine inhibits CYP2D6 which converts Codeine to Morphine.",
+    "clinical_effect": "Lack of efficacy",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Use Morphine directly",
+      "NSAIDs"
+    ],
+    "monitoring": "Monitor pain control",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Ibuprofen",
+    "drug_b": "Lisinopril",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "NSAIDs reduce ACE inhibitor efficacy and increase renal risk.",
+    "clinical_effect": "Reduced BP control, acute kidney injury",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "Monitor BP and Creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Aspirin",
+    "drug_b": "Methotrexate",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "NSAIDs reduce renal Methotrexate clearance.",
+    "clinical_effect": "Methotrexate toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "Monitor CBC and LFTs",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Omeprazole",
+    "drug_b": "Clopidogrel",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Omeprazole inhibits CYP2C19, reducing conversion of Clopidogrel to active form.",
+    "clinical_effect": "Reduced antiplatelet efficacy",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Pantoprazole",
+      "Rabeprazole"
+    ],
+    "monitoring": "Monitor for cardiac events",
+    "cyp_enzyme": "CYP2C19",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Clarithromycin",
+    "drug_b": "Colchicine",
+    "severity": "contraindicated",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 and P-gp inhibition leads to Colchicine toxicity.",
+    "clinical_effect": "Fatal Colchicine toxicity",
+    "recommendation": "contraindicated",
+    "alternatives": [
+      "Azithromycin"
+    ],
+    "monitoring": "Absolute contraindication in renal/hepatic impairment",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Spironolactone",
+    "drug_b": "Potassium Chloride",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive potassium sparing.",
+    "clinical_effect": "Hyperkalemia",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Monitor Potassium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Digoxin",
+    "drug_b": "Spironolactone",
+    "severity": "minor",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Spironolactone may reduce renal Digoxin clearance.",
+    "clinical_effect": "Increased Digoxin levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor Digoxin",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Topiramate",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Both can cause metabolic acidosis.",
+    "clinical_effect": "Metabolic acidosis",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor Bicarbonate",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sildenafil",
+    "drug_b": "Doxazosin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive vasodilation.",
+    "clinical_effect": "Orthostatic hypotension",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Separate doses by 4 hours"
+    ],
+    "monitoring": "Monitor BP",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Vitamin K",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Direct antagonism.",
+    "clinical_effect": "Decreased INR",
+    "recommendation": "avoid_large_changes",
+    "alternatives": [
+      "Consistent diet"
+    ],
+    "monitoring": "Monitor INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Prednisone",
+    "drug_b": "Ibuprofen",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Increased GI ulceration risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "H2 blocker prophylaxis",
+      "PPI"
+    ],
+    "monitoring": "Monitor for GI symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methotrexate",
+    "drug_b": "Phenytoin",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Displacement from protein binding.",
+    "clinical_effect": "Increased Methotrexate levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor CBC",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Levofloxacin",
+    "drug_b": "Multivitamins with Zinc",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Chelation reduces absorption.",
+    "clinical_effect": "Reduced antibiotic efficacy",
+    "recommendation": "separate_doses",
+    "alternatives": [
+      "Take vitamins 2h after or 6h before antibiotic"
+    ],
+    "monitoring": "Monitor for infection resolution",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Ciprofloxacin",
+    "drug_b": "Calcium Carbonate",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Chelation.",
+    "clinical_effect": "Reduced efficacy",
+    "recommendation": "separate_doses",
+    "alternatives": [
+      "Separate by 2-4 hours"
+    ],
+    "monitoring": "Monitor",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Doxycycline",
+    "drug_b": "Ferrous Sulfate",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Chelation.",
+    "clinical_effect": "Reduced efficacy",
+    "recommendation": "separate_doses",
+    "alternatives": [
+      "Separate by 2-3 hours"
+    ],
+    "monitoring": "Monitor",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Azole Antifungals",
+    "drug_b": "Omeprazole",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced acidity decreases absorption of Ketoconazole/Itraconazole.",
+    "clinical_effect": "Reduced antifungal efficacy",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Take with acidic beverage (Coke)"
+    ],
+    "monitoring": "Monitor infection",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Cyclosporine",
+    "drug_b": "Erythromycin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Cyclosporine toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Cyclosporine dose"
+    ],
+    "monitoring": "Monitor Cyclosporine levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tacrolimus",
+    "drug_b": "Clarithromycin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Tacrolimus toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Tacrolimus dose"
+    ],
+    "monitoring": "Monitor Tacrolimus levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Theophylline",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction of metabolism.",
+    "clinical_effect": "Decreased levels of both",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Carbamazepine",
+    "drug_b": "Oral Contraceptives",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction of metabolism.",
+    "clinical_effect": "Contraceptive failure",
+    "recommendation": "use_alternative_contraception",
+    "alternatives": [
+      "Barrier method",
+      "IUD"
+    ],
+    "monitoring": "Counsel patient",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Rifampin",
+    "drug_b": "Oral Contraceptives",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Potent induction.",
+    "clinical_effect": "Contraceptive failure",
+    "recommendation": "use_alternative_contraception",
+    "alternatives": [
+      "Barrier method"
+    ],
+    "monitoring": "Counsel patient",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "St. John's Wort",
+    "drug_b": "Oral Contraceptives",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Contraceptive failure",
+    "recommendation": "avoid_supplement",
+    "alternatives": [],
+    "monitoring": "Counsel patient",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Metronidazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibits CYP2C9.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Warfarin dose"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Sulfamethoxazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibits CYP2C9.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Warfarin dose"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Valproic Acid",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Protein displacement and metabolic inhibition.",
+    "clinical_effect": "Phenytoin toxicity (free levels)",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor free Phenytoin",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Valproic Acid",
+    "drug_b": "Lamotrigine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibits glucuronidation.",
+    "clinical_effect": "Rash, Stevens-Johnson Syndrome",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Lamotrigine dose by 50%"
+    ],
+    "monitoring": "Monitor for rash",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "Spironolactone",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Potassium sparing.",
+    "clinical_effect": "Hyperkalemia",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Potassium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Losartan",
+    "drug_b": "Potassium",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Potassium sparing.",
+    "clinical_effect": "Hyperkalemia",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Potassium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Furosemide",
+    "drug_b": "Gentamicin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive ototoxicity and nephrotoxicity.",
+    "clinical_effect": "Hearing loss, Kidney damage",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Monitor renal function and hearing",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Digoxin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Digoxin by 50%"
+    ],
+    "monitoring": "Digoxin levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Metoprolol",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive bradycardia.",
+    "clinical_effect": "Severe bradycardia",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Clopidogrel",
+    "drug_b": "Aspirin",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive antiplatelet.",
+    "clinical_effect": "Increased bleeding (often intended)",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Ginkgo Biloba",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Antiplatelet effects of Ginkgo.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Garlic",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Antiplatelet effects.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Vitamin E",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "High doses (>400IU) inhibit coagulation.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Alprazolam",
+    "drug_b": "Clarithromycin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Excessive sedation",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Alprazolam dose"
+    ],
+    "monitoring": "Sedation level",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Diazepam",
+    "drug_b": "Omeprazole",
+    "severity": "minor",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2C19 inhibition.",
+    "clinical_effect": "Increased sedation",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Sedation",
+    "cyp_enzyme": "CYP2C19",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sildenafil",
+    "drug_b": "Isosorbide Mononitrate",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Massive vasodilation.",
+    "clinical_effect": "Death",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "Absolute contraindication",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Vardenafil",
+    "drug_b": "Nitroglycerin",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Massive vasodilation.",
+    "clinical_effect": "Death",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "Absolute contraindication",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tadalafil",
+    "drug_b": "Nitroglycerin",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Massive vasodilation.",
+    "clinical_effect": "Death",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "Absolute contraindication",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Theophylline",
+    "drug_b": "Allopurinol",
+    "severity": "minor",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition of metabolism.",
+    "clinical_effect": "Increased Theophylline",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Theophylline levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Theophylline",
+    "drug_b": "Propranolol",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Beta-blockade antagonizes bronchodilation.",
+    "clinical_effect": "Bronchospasm",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Atenolol"
+    ],
+    "monitoring": "Respiratory status",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Naproxen",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "Lithium levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methotrexate",
+    "drug_b": "Naproxen",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CBC",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Digoxin",
+    "drug_b": "Clarithromycin",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Digoxin levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Digoxin",
+    "drug_b": "Erythromycin",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Digoxin levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Colchicine",
+    "drug_b": "Atorvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Additive myopathy risk.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Cyclosporine",
+    "drug_b": "Ketoconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Cyclosporine by 75%"
+    ],
+    "monitoring": "Cyclosporine levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tacrolimus",
+    "drug_b": "Ketoconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Tacrolimus dose"
+    ],
+    "monitoring": "Tacrolimus levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Grapefruit Juice",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lovastatin",
+    "drug_b": "Grapefruit Juice",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Buspirone",
+    "drug_b": "Grapefruit Juice",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Increased sedation",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Sedation",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Grapefruit Juice",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Increased Amiodarone",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Felodipine",
+    "drug_b": "Grapefruit Juice",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Hypotension",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "BP",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Nifedipine",
+    "drug_b": "Grapefruit Juice",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Hypotension",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "BP",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Quetiapine",
+    "drug_b": "Ketoconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Quetiapine toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Sedation",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Quetiapine",
+    "drug_b": "Phenytoin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 induction.",
+    "clinical_effect": "Reduced Quetiapine levels",
+    "recommendation": "adjust_dose",
+    "alternatives": [
+      "Increase Quetiapine"
+    ],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lurasidone",
+    "drug_b": "Ketoconazole",
+    "severity": "contraindicated",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "Absolute contraindication",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lurasidone",
+    "drug_b": "Rifampin",
+    "severity": "contraindicated",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 induction.",
+    "clinical_effect": "Efficacy loss",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "Absolute contraindication",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sildenafil",
+    "drug_b": "Ritonavir",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Hypotension",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Sildenafil 25mg every 48h"
+    ],
+    "monitoring": "BP",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Cranberry Juice",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Possible potentiation.",
+    "clinical_effect": "Increased INR",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metoprolol",
+    "drug_b": "Terbinafine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "Bradycardia",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Reduce Metoprolol"
+    ],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tamoxifen",
+    "drug_b": "Paroxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "Efficacy loss",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Venlafaxine"
+    ],
+    "monitoring": "Cancer status",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tamoxifen",
+    "drug_b": "Fluoxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "Efficacy loss",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Venlafaxine"
+    ],
+    "monitoring": "Cancer status",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tamoxifen",
+    "drug_b": "Bupropion",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "Efficacy loss",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Venlafaxine"
+    ],
+    "monitoring": "Cancer status",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Codeine",
+    "drug_b": "Quinidine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "No pain relief",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Pain",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metoprolol",
+    "drug_b": "Quinidine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP2D6 inhibition.",
+    "clinical_effect": "Bradycardia",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Carbamazepine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Thrombosis risk",
+    "recommendation": "adjust_dose",
+    "alternatives": [
+      "Increase Warfarin"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Cyclosporine",
+    "drug_b": "Carbamazepine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Rejection risk",
+    "recommendation": "adjust_dose",
+    "alternatives": [
+      "Increase Cyclosporine"
+    ],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Tacrolimus",
+    "drug_b": "Phenytoin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Rejection risk",
+    "recommendation": "adjust_dose",
+    "alternatives": [
+      "Increase Tacrolimus"
+    ],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Efficacy loss",
+    "recommendation": "adjust_dose",
+    "alternatives": [
+      "Increase Simvastatin"
+    ],
+    "monitoring": "Cholesterol",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Fentanyl",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Respiratory depression",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Respiration",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Diltiazem",
+    "drug_b": "Buspirone",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Sedation",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Sedation",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Verapamil",
+    "drug_b": "Buspirone",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "CYP3A4 inhibition.",
+    "clinical_effect": "Sedation",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Sedation",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Multi-CYP inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Warfarin by 50%"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Celecoxib",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "Lithium levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Diclofenac",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "Lithium levels",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methotrexate",
+    "drug_b": "Diclofenac",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Reduced clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CBC",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Diclofenac",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Bleeding risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Ibuprofen",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Bleeding risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Naproxen",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Bleeding risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "avoid_combination",
+    "alternatives": [
+      "Acetaminophen"
+    ],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Celecoxib",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Bleeding risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Aspirin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs inhibit platelet serotonin uptake.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluoxetine",
+    "drug_b": "Aspirin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs inhibit platelet serotonin uptake.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Paroxetine",
+    "drug_b": "Aspirin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs inhibit platelet serotonin uptake.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Citalopram",
+    "drug_b": "Aspirin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs inhibit platelet serotonin uptake.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Ibuprofen",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs + NSAIDs = high GI bleed risk.",
+    "clinical_effect": "GI bleed",
+    "recommendation": "monitor_closely",
+    "alternatives": [
+      "PPI prophylaxis"
+    ],
+    "monitoring": "GI symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Warfarin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "SSRIs increase bleeding risk.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Levofloxacin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Ciprofloxacin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Moxifloxacin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Clarithromycin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Erythromycin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Haloperidol",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Quetiapine",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Arrhythmia",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluconazole",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Ondansetron",
+    "drug_b": "Amiodarone",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Arrhythmia",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Methadone",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive QTc prolongation.",
+    "clinical_effect": "Torsades de Pointes",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sotalol",
+    "drug_b": "Amiodarone",
+    "severity": "contraindicated",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Extreme QTc prolongation.",
+    "clinical_effect": "Death",
+    "recommendation": "contraindicated",
+    "alternatives": [],
+    "monitoring": "ECG",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Clotrimazole",
+    "severity": "minor",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Minimal systemic absorption.",
+    "clinical_effect": "Slight INR change",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Furosemide",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Possible additive risk of lactic acidosis (rare).",
+    "clinical_effect": "Lactic acidosis",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Renal function",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "Hydrochlorothiazide",
+    "severity": "none",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Synergistic BP lowering (beneficial).",
+    "clinical_effect": "Better BP control",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "BP",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Metformin",
+    "severity": "none",
+    "mechanism": "metabolic",
+    "mechanism_detail": "No significant interaction.",
+    "clinical_effect": "None",
+    "recommendation": "none",
+    "alternatives": [],
+    "monitoring": "None",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "Metformin",
+    "severity": "none",
+    "mechanism": "metabolic",
+    "mechanism_detail": "No significant interaction.",
+    "clinical_effect": "None",
+    "recommendation": "none",
+    "alternatives": [],
+    "monitoring": "None",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Amoxicillin",
+    "drug_b": "Metformin",
+    "severity": "none",
+    "mechanism": "metabolic",
+    "mechanism_detail": "No significant interaction.",
+    "clinical_effect": "None",
+    "recommendation": "none",
+    "alternatives": [],
+    "monitoring": "None",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Aspirin",
+    "drug_b": "Metformin",
+    "severity": "none",
+    "mechanism": "metabolic",
+    "mechanism_detail": "No significant interaction.",
+    "clinical_effect": "None",
+    "recommendation": "none",
+    "alternatives": [],
+    "monitoring": "None",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Lisinopril",
+    "severity": "none",
+    "mechanism": "metabolic",
+    "mechanism_detail": "No significant interaction.",
+    "clinical_effect": "None",
+    "recommendation": "none",
+    "alternatives": [],
+    "monitoring": "None",
+    "cyp_enzyme": null,
+    "evidence_level": "none"
+  },
+  {
+    "drug_a": "Escitalopram",
+    "drug_b": "Tramadol",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin syndrome risk.",
+    "clinical_effect": "Serotonin syndrome",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Duloxetine",
+    "drug_b": "Tramadol",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin syndrome risk.",
+    "clinical_effect": "Serotonin syndrome",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Venlafaxine",
+    "drug_b": "Tramadol",
+    "severity": "major",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin syndrome risk.",
+    "clinical_effect": "Serotonin syndrome",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Clarithromycin",
+    "drug_b": "Carbamazepine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Erythromycin",
+    "drug_b": "Carbamazepine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluconazole",
+    "drug_b": "Carbamazepine",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Itraonazole",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Rhabdomyolysis",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Posaconazole",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Rhabdomyolysis",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Voriconazole",
+    "drug_b": "Simvastatin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Rhabdomyolysis",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluconazole",
+    "drug_b": "Simvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Simvastatin 20mg"
+    ],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluconazole",
+    "drug_b": "Atorvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Diltiazem",
+    "drug_b": "Atorvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Verapamil",
+    "drug_b": "Atorvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Amiodarone",
+    "drug_b": "Atorvastatin",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Niacin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive myopathy.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Niacin",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive myopathy.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Simvastatin",
+    "drug_b": "Fenofibrate",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive myopathy.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Atorvastatin",
+    "drug_b": "Fenofibrate",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Additive myopathy.",
+    "clinical_effect": "Myopathy",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "CK",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metoprolol",
+    "drug_b": "Fluoxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bradycardia",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metoprolol",
+    "drug_b": "Paroxetine",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bradycardia",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Carvedilol",
+    "drug_b": "Fluoxetine",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Nebivolol",
+    "drug_b": "Fluoxetine",
+    "severity": "moderate",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Increased levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Heart rate",
+    "cyp_enzyme": "CYP2D6",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Ciprofloxacin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP1A2",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Clarithromycin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Erythromycin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Tetracycline",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Gut flora.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Amoxicillin",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Gut flora.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Cephalexin",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Gut flora.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Metronidazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Trimethoprim",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Dabigatran",
+    "drug_b": "Verapamil",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "reduce_dose",
+    "alternatives": [
+      "Reduce Dabigatran"
+    ],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Dabigatran",
+    "drug_b": "Amiodarone",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Dabigatran",
+    "drug_b": "Quinidine",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Dabigatran",
+    "drug_b": "Ketoconazole",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp inhibition.",
+    "clinical_effect": "Bleeding",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Bleeding",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Dabigatran",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "P-gp induction.",
+    "clinical_effect": "Stroke risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Rivaroxaban",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Stroke risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Apixaban",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Stroke risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": "CYP3A4",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Edoxaban",
+    "drug_b": "Rifampin",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Induction.",
+    "clinical_effect": "Stroke risk",
+    "recommendation": "avoid_combination",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Coenzyme Q10",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Structural similarity to Vit K.",
+    "clinical_effect": "Decreased INR",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Green Tea",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Contains Vit K.",
+    "clinical_effect": "Decreased INR",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Warfarin",
+    "drug_b": "Soy Milk",
+    "severity": "minor",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Unknown mechanism.",
+    "clinical_effect": "Decreased INR",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "INR",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Fluconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Voriconazole",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "avoid_or_adjust",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Phenytoin",
+    "drug_b": "Amiodarone",
+    "severity": "major",
+    "mechanism": "metabolic",
+    "mechanism_detail": "Inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Levels",
+    "cyp_enzyme": "CYP2C9",
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Ranolazine",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "OCT2 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Metformin to 1000mg"
+    ],
+    "monitoring": "Glucose",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Dolutegravir",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "OCT2 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "limit_dose",
+    "alternatives": [
+      "Limit Metformin to 1000mg"
+    ],
+    "monitoring": "Glucose",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Metformin",
+    "drug_b": "Vandetanib",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "OCT2 inhibition.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Glucose",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lisinopril",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Renal risk.",
+    "clinical_effect": "AKI",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Losartan",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Renal risk.",
+    "clinical_effect": "AKI",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Enalapril",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Renal risk.",
+    "clinical_effect": "AKI",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Valsartan",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Renal risk.",
+    "clinical_effect": "AKI",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Creatinine",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Furosemide",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Reduced diuretic effect.",
+    "clinical_effect": "Edema",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Weight",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Hydrochlorothiazide",
+    "drug_b": "NSAIDs",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Reduced effect.",
+    "clinical_effect": "High BP",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "BP",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Sumatriptan",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin risk.",
+    "clinical_effect": "Symptoms",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Sertraline",
+    "drug_b": "Zolmitriptan",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin risk.",
+    "clinical_effect": "Symptoms",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Fluoxetine",
+    "drug_b": "Sumatriptan",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin risk.",
+    "clinical_effect": "Symptoms",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Paroxetine",
+    "drug_b": "Sumatriptan",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin risk.",
+    "clinical_effect": "Symptoms",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Citalopram",
+    "drug_b": "Sumatriptan",
+    "severity": "moderate",
+    "mechanism": "pharmacodynamic",
+    "mechanism_detail": "Serotonin risk.",
+    "clinical_effect": "Symptoms",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Symptoms",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Acetazolamide",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Increased clearance.",
+    "clinical_effect": "Reduced levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Lithium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Theophylline",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Increased clearance.",
+    "clinical_effect": "Reduced levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Lithium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Sodium Chloride (High intake)",
+    "severity": "moderate",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Increased clearance.",
+    "clinical_effect": "Reduced levels",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Lithium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  },
+  {
+    "drug_a": "Lithium",
+    "drug_b": "Sodium Chloride (Low intake)",
+    "severity": "major",
+    "mechanism": "pharmacokinetic",
+    "mechanism_detail": "Decreased clearance.",
+    "clinical_effect": "Toxicity",
+    "recommendation": "monitor_closely",
+    "alternatives": [],
+    "monitoring": "Lithium",
+    "cyp_enzyme": null,
+    "evidence_level": "high"
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "patient_elderly_polypharmacy",
+    "age": 72,
+    "weight_kg": 68,
+    "renal_function": "mild_impairment",
+    "liver_function": "normal",
+    "current_medications": [
+      "Warfarin",
+      "Metformin",
+      "Lisinopril",
+      "Atorvastatin",
+      "Omeprazole"
+    ],
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Hypertension",
+      "Atrial Fibrillation",
+      "Hyperlipidemia"
+    ],
+    "allergies": [
+      "Penicillin"
+    ]
+  },
+  {
+    "id": "patient_cardiac",
+    "age": 58,
+    "weight_kg": 82,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Amiodarone",
+      "Digoxin",
+      "Furosemide",
+      "Spironolactone"
+    ],
+    "diagnoses": [
+      "Heart Failure",
+      "Atrial Fibrillation"
+    ],
+    "allergies": []
+  },
+  {
+    "id": "patient_psychiatric",
+    "age": 34,
+    "weight_kg": 71,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Sertraline",
+      "Lithium",
+      "Quetiapine"
+    ],
+    "diagnoses": [
+      "Bipolar Disorder",
+      "Major Depressive Disorder"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ]
+  },
+  {
+    "id": "patient_diabetic_renal",
+    "age": 65,
+    "weight_kg": 88,
+    "renal_function": "moderate_impairment",
+    "liver_function": "normal",
+    "current_medications": [
+      "Metformin",
+      "Glipizide",
+      "Lisinopril",
+      "Simvastatin"
+    ],
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Chronic Kidney Disease",
+      "Hypertension"
+    ],
+    "allergies": []
+  },
+  {
+    "id": "patient_transplant",
+    "age": 45,
+    "weight_kg": 74,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Cyclosporine",
+      "Prednisone",
+      "Mycophenolate",
+      "Pantoprazole"
+    ],
+    "diagnoses": [
+      "Renal Transplant",
+      "Prophylaxis"
+    ],
+    "allergies": [
+      "Aspirin"
+    ]
+  },
+  {
+    "id": "patient_hiv_pain",
+    "age": 39,
+    "weight_kg": 70,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Dolutegravir",
+      "Tenofovir",
+      "Emtricitabine",
+      "Oxycodone"
+    ],
+    "diagnoses": [
+      "HIV",
+      "Chronic Back Pain"
+    ],
+    "allergies": []
+  },
+  {
+    "id": "patient_epilepsy",
+    "age": 28,
+    "weight_kg": 62,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Phenytoin",
+      "Valproic Acid",
+      "Folic Acid"
+    ],
+    "diagnoses": [
+      "Epilepsy"
+    ],
+    "allergies": [
+      "Latex"
+    ]
+  },
+  {
+    "id": "patient_copd",
+    "age": 68,
+    "weight_kg": 76,
+    "renal_function": "normal",
+    "liver_function": "normal",
+    "current_medications": [
+      "Theophylline",
+      "Albuterol",
+      "Fluticasone",
+      "Tiotropium"
+    ],
+    "diagnoses": [
+      "COPD",
+      "History of smoking"
+    ],
+    "allergies": []
+  },
+  {
+    "id": "patient_afib_elderly",
+    "age": 85,
+    "weight_kg": 60,
+    "renal_function": "moderate_impairment",
+    "liver_function": "normal",
+    "current_medications": [
+      "Dabigatran",
+      "Metoprolol",
+      "Amlodipine"
+    ],
+    "diagnoses": [
+      "Atrial Fibrillation",
+      "Hypertension"
+    ],
+    "allergies": []
+  },
+  {
+    "id": "patient_cancer_pain",
+    "age": 52,
+    "weight_kg": 65,
+    "renal_function": "normal",
+    "liver_function": "impaired",
+    "current_medications": [
+      "Tamoxifen",
+      "Morphine",
+      "Ondansetron",
+      "Docusate"
+    ],
+    "diagnoses": [
+      "Breast Cancer",
+      "Bone Metastasis"
+    ],
+    "allergies": [
+      "Codeine"
+    ]
+  }
+]
