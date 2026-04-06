@@ -1,7 +1,7 @@
 from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from ..models import ResetResult, StepResult, StateResult, ToolCallAction, ToolResult
+from models import ResetResult, StepResult, StateResult, ToolCallAction, ToolResult
 from .PharmaEnv_environment import env_reset, env_step, env_state
 
 app = FastAPI(
