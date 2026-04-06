@@ -10,6 +10,10 @@ import re
 from typing import List, Optional
 from openai import OpenAI
 import requests
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ── Config from environment variables ────────────────────────────────────────
 API_BASE_URL = os.environ.get("API_BASE_URL", "https://api.openai.com/v1")

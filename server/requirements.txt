@@ -5,3 +5,5 @@ openai==1.40.0
 requests==2.32.3
 python-multipart==0.0.9
 openenv-core[core]>=0.2.2
+python-dotenv
+
