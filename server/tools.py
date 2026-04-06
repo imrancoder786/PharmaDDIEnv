@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 from typing import Dict, Any
-from .models import ToolResult
+from ..models import ToolResult
 
-DATA_DIR = Path("PharmaEnv/data")
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 def load_interactions():
     return json.loads((DATA_DIR / "drug_interactions.json").read_text())

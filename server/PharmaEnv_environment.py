@@ -1,104 +1,142 @@
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
-#
-# This source code is licensed under the BSD-style license found in the
-# LICENSE file in the root directory of this source tree.
+import uuid
+import random
+from typing import Optional, Dict
+from ..models import *
+from .task_generator import TaskGenerator
+from .tools import execute_tool
+from .graders import grade_answer
 
-"""
-Pharmaenv Environment Implementation.
+# In-memory session store
+sessions: Dict[str, dict] = {}
 
-A simple test environment that echoes back messages sent to it.
-Perfect for testing HTTP server infrastructure.
-"""
+task_generator = TaskGenerator()
 
-from uuid import uuid4
+def env_reset(task_level: Optional[str] = None, seed: Optional[int] = None) -> ResetResult:
+    """Creates a new episode."""
+    try:
+        level = TaskLevel(task_level) if task_level else random.choice(list(TaskLevel))
+    except ValueError:
+        level = random.choice(list(TaskLevel))
+        
+    task = task_generator.generate_task(level, seed)
+    session_id = str(uuid.uuid4())
+    
+    sessions[session_id] = {
+        "session_id": session_id,
+        "task": task,
+        "step_count": 0,
+        "max_steps": 20 if level == TaskLevel.hard else 15,
+        "done": False,
+        "tool_call_history": [],
+        "found_interactions": set(), # Track unique interactions found for progress rewards
+        "unique_drugs_looked_up": set(),
+        "accumulated_progress_reward": 0.0,
+        "final_answer": None
+    }
+    
+    obs = DrugInteractionObservation(
+        task_id=task["task_id"],
+        task_level=task["task_level"],
+        patient_profile=task["patient_profile"],
+        proposed_drug=task["proposed_drug"],
+        current_medications=task["current_medications"],
+        task_description=task["task_description"],
+        available_tools=["lookup_drug", "check_interaction", "get_patient_labs",
+                        "search_alternatives", "get_dosing_guideline", "submit_answer"],
+        step_count=0,
+        max_steps=sessions[session_id]["max_steps"],
+        done=False,
+        message="Episode started. Use available tools to assess drug interaction safety."
+    )
+    
+    return ResetResult(observation=obs, info={"session_id": session_id})
 
-from openenv.core.env_server.interfaces import Environment
-from openenv.core.env_server.types import State
+def env_step(session_id: str, action: ToolCallAction) -> StepResult:
+    """Processes one agent action with partial reward signals."""
+    session = sessions.get(session_id)
+    if not session:
+        raise ValueError(f"Session {session_id} not found")
+    
+    if session["done"]:
+        return StepResult(observation=env_state(session_id).observation, reward=0.0, done=True)
+        
+    session["step_count"] += 1
+    tool_name = action.tool_name
+    arguments = action.arguments
+    
+    # Execute tool
+    tool_result = execute_tool(tool_name, arguments, session)
+    
+    reward = 0.0
+    done = False
+    info = {}
+    
+    # --- Partial Reward Logic (Progress Signals) ---
+    # Max progress reward is capped at 0.3, remaining 0.7 comes from final submission
+    
+    if tool_name == "lookup_drug" and tool_result.success:
+        drug = arguments.get("drug_name", "").lower()
+        if drug not in session["unique_drugs_looked_up"]:
+            session["unique_drugs_looked_up"].add(drug)
+            reward = 0.05
+            
+    elif tool_name == "check_interaction" and tool_result.success:
+        res = tool_result.result
+        if res.get("severity") and res["severity"] != "none":
+            pair = tuple(sorted([res["drug_a"].lower(), res["drug_b"].lower()]))
+            if pair not in session["found_interactions"]:
+                session["found_interactions"].add(pair)
+                reward = 0.1
+                
+    # Cap accumulated progress reward
+    session["accumulated_progress_reward"] += reward
+    if session["accumulated_progress_reward"] > 0.3:
+        reward = 0.0 # No more progress reward after 0.3
+    
+    # --- Terminal Conditions ---
+    if tool_name == "submit_answer" and tool_result.success:
+        # Final grade scale 0.0 - 0.7
+        final_grade, breakdown = grade_answer(arguments, session["task"])
+        reward = (final_grade * 0.7) + min(session["accumulated_progress_reward"], 0.3)
+        done = True
+        session["done"] = True
+        info["grading_breakdown"] = breakdown
+        
+    elif session["step_count"] >= session["max_steps"]:
+        done = True
+        session["done"] = True
+        reward = 0.0 # Penalty for timeout
+        info["message"] = "Max steps reached."
 
-try:
-    from ..models import PharmaenvAction, PharmaenvObservation
-except ImportError:
-    from models import PharmaenvAction, PharmaenvObservation
+    # Build updated observation
+    task = session["task"]
+    obs = DrugInteractionObservation(
+        task_id=task["task_id"],
+        task_level=task["task_level"],
+        patient_profile=task["patient_profile"],
+        proposed_drug=task["proposed_drug"],
+        current_medications=task["current_medications"],
+        task_description=task["task_description"],
+        available_tools=["lookup_drug", "check_interaction", "get_patient_labs",
+                        "search_alternatives", "get_dosing_guideline", "submit_answer"],
+        step_count=session["step_count"],
+        max_steps=session["max_steps"],
+        done=done,
+        message=f"Tool '{tool_name}' result: {tool_result.result if tool_result.success else tool_result.error}"
+    )
+    
+    return StepResult(observation=obs, reward=round(reward, 3), done=done, info=info)
 
-
-class PharmaenvEnvironment(Environment):
-    """
-    A simple echo environment that echoes back messages.
-
-    This environment is designed for testing the HTTP server infrastructure.
-    It maintains minimal state and simply echoes back whatever message it receives.
-
-    Example:
-        >>> env = PharmaenvEnvironment()
-        >>> obs = env.reset()
-        >>> print(obs.echoed_message)  # "Pharmaenv environment ready!"
-        >>>
-        >>> obs = env.step(PharmaenvAction(message="Hello"))
-        >>> print(obs.echoed_message)  # "Hello"
-        >>> print(obs.message_length)  # 5
-    """
-
-    # Enable concurrent WebSocket sessions.
-    # Set to True if your environment isolates state between instances.
-    # When True, multiple WebSocket clients can connect simultaneously, each
-    # getting their own environment instance (when using factory mode in app.py).
-    SUPPORTS_CONCURRENT_SESSIONS: bool = True
-
-    def __init__(self):
-        """Initialize the PharmaEnv environment."""
-        self._state = State(episode_id=str(uuid4()), step_count=0)
-        self._reset_count = 0
-
-    def reset(self) -> PharmaenvObservation:
-        """
-        Reset the environment.
-
-        Returns:
-            PharmaenvObservation with a ready message
-        """
-        self._state = State(episode_id=str(uuid4()), step_count=0)
-        self._reset_count += 1
-
-        return PharmaenvObservation(
-            echoed_message="Pharmaenv environment ready!",
-            message_length=0,
-            done=False,
-            reward=0.0,
-        )
-
-    def step(self, action: PharmaenvAction) -> PharmaenvObservation:  # type: ignore[override]
-        """
-        Execute a step in the environment by echoing the message.
-
-        Args:
-            action: PharmaenvAction containing the message to echo
-
-        Returns:
-            PharmaenvObservation with the echoed message and its length
-        """
-        self._state.step_count += 1
-
-        message = action.message
-        length = len(message)
-
-        # Simple reward: longer messages get higher rewards
-        reward = length * 0.1
-
-        return PharmaenvObservation(
-            echoed_message=message,
-            message_length=length,
-            done=False,
-            reward=reward,
-            metadata={"original_message": message, "step": self._state.step_count},
-        )
-
-    @property
-    def state(self) -> State:
-        """
-        Get the current environment state.
-
-        Returns:
-            Current State with episode_id and step_count
-        """
-        return self._state
+def env_state(session_id: str) -> StateResult:
+    session = sessions.get(session_id)
+    if not session: raise ValueError("Not found")
+    task = session["task"]
+    obs = DrugInteractionObservation(
+        task_id=task["task_id"], task_level=task["task_level"],
+        patient_profile=task["patient_profile"], proposed_drug=task["proposed_drug"],
+        current_medications=task["current_medications"], task_description=task["task_description"],
+        available_tools=["lookup_drug", "check_interaction", "get_patient_labs", "submit_answer"],
+        step_count=session["step_count"], max_steps=session["max_steps"], done=session["done"],
+        message="State requested"
+    )
+    return StateResult(observation=obs, step_count=session["step_count"], done=session["done"])

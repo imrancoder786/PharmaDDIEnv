@@ -2,7 +2,7 @@ name: pharma-interaction-gym
 version: "1.0.0"
 type: space
 runtime: fastapi
-app: server.main:app
+app: server.app:app
 port: 7860
 description: >
   A real-world RL environment for clinical pharmacists to detect dangerous drug interactions, 

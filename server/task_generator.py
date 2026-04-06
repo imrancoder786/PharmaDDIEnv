@@ -1,11 +1,11 @@
 import random
 import json
 from pathlib import Path
-from .models import TaskLevel
+from ..models import TaskLevel
 
 class TaskGenerator:
     def __init__(self):
-        self.data_dir = Path("PharmaEnv/data")
+        self.data_dir = Path(__file__).parent.parent / "data"
         self.interactions = json.loads((self.data_dir / "drug_interactions.json").read_text())
         self.patients = json.loads((self.data_dir / "patient_profiles.json").read_text())
         self.metadata = json.loads((self.data_dir / "drug_metadata.json").read_text())

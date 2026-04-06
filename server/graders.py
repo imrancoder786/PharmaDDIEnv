@@ -1,7 +1,7 @@
 import os
 import json
 from openai import OpenAI
-from .models import TaskLevel, SeverityLevel
+from ..models import TaskLevel, SeverityLevel
 
 def grade_answer(answer: dict, task: dict) -> tuple[float, dict]:
     """Main grader router."""
